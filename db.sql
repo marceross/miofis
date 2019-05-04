@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 72.167.233.110
--- Generation Time: May 04, 2019 at 12:20 AM
+-- Generation Time: May 04, 2019 at 01:00 AM
 -- Server version: 5.5.43
 -- PHP Version: 5.1.6
 
@@ -51,4 +51,16 @@ CREATE TABLE `hire` (
   `mail` varchar(40) NOT NULL,
   `more` varchar(500) NOT NULL,
   PRIMARY KEY (`mail`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
+--
+
+CREATE TABLE `users` (
+  `user` varchar(10) NOT NULL,
+  `pass` varchar(10) NOT NULL,
+  PRIMARY KEY (`user`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
