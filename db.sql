@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 72.167.233.110
--- Generation Time: May 04, 2019 at 01:00 AM
+-- Generation Time: May 05, 2019 at 07:22 PM
 -- Server version: 5.5.43
 -- PHP Version: 5.1.6
 
@@ -24,6 +24,7 @@ CREATE TABLE `apply` (
   `mail` varchar(40) NOT NULL,
   `phone` int(12) DEFAULT NULL,
   `linkein` varchar(100) DEFAULT NULL,
+  `comment` varchar(500) NOT NULL,
   PRIMARY KEY (`mail`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -49,7 +50,7 @@ CREATE TABLE `connect` (
 CREATE TABLE `hire` (
   `name` varchar(20) NOT NULL,
   `mail` varchar(40) NOT NULL,
-  `more` varchar(500) NOT NULL,
+  `comment` varchar(500) NOT NULL,
   PRIMARY KEY (`mail`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
